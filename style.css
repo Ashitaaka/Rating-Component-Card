@@ -1,0 +1,121 @@
+:root{
+    /*colors var*/
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light_Grey: hsl(217, 12%, 63%);
+    --Medium_Grey: hsl(216, 12%, 54%);
+    --Dark_Blue: rgb(40,46,55);	
+    --More_Dark_Blue: rgb(35,40,49	);
+    --Very_Dark_Blue: rgb(20,21,24);	 
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-size: 15px;
+    font-weight: 400;
+    font-family:sans-serif;
+    line-height: 1.6em;
+    color: var(--Medium_Grey);
+    background-color: var(--Very_Dark_Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 1.7em;
+    font-weight: 500;
+    color: var(--White);
+    margin: 1.2em 0 0.65em 0;
+}
+
+#rate_card, #thanks_card{
+    min-width: 340px;
+    max-width: 400px;
+    height: 100%;
+    background-color: var(--More_Dark_Blue);
+    border-radius: 1.5em;
+    padding: 2em 1.5em;
+}
+
+
+#star_img img{
+    border-radius: 50%;
+    padding: 1em;
+    background-color: var(--Dark_Blue);
+}
+
+#btn_rates{
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    width: 3.5em;
+    height: 3.5em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.btn_rate{
+    background-color: var(--Dark_Blue);
+    color: var(--Medium_Grey);
+    transition: 0.4s;
+}
+
+.btn_rate:hover{
+    background-color: var(--Medium_Grey);
+    color: var(--White);
+}
+
+.btn_clicked{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+input{
+    width: 100%;
+    padding: 0.9em 0;
+    background-color: var(--Orange);
+    color: var(--White);
+    border: none;
+    border-radius: 2em;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+#thanks_card{
+    text-align: center;
+    display: none;
+    transition: 0.8s;
+}
+#thanks_card img{
+    margin: 0 0 2em 0;
+}
+
+#selected_rate{
+    color: var(--Orange);
+    background-color: var(--Dark_Blue);
+    padding: 0.5em 1.5em;
+    margin: auto;
+    width: fit-content;
+    border-radius: 2em;
+}
+
